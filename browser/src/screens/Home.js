@@ -1,18 +1,17 @@
 import React from 'react'
-import { Row, Col } from 'react-bootstrap'
 import products from '../products'
 import Product from '../components/Product'
 
 const Home = () => {
   return (
     <>
-      <Row>
+      <div>
         {products.map(product => (
-          <Col sm={12} md={6} lg={3} xlg={4} key={product.id}>
+          <div key={product.id}>
             <Product product={product} />
-          </Col>
+          </div>
         ))}
-      </Row>
+      </div>
     </>
   )
 }
