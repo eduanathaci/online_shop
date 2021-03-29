@@ -1,5 +1,15 @@
+import Header from './components/Header'
+import Footer from './components/Footer'
+
+
 const App = () => {
-  return <></>
+  return (
+    <div className="container">
+      <Header classname=""></Header>
+      <main>to do</main>
+      <Footer></Footer>
+    </div>
+  )
 }
 
 export default App;
